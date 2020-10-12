@@ -1,0 +1,88 @@
+// Form
+.form-section {
+  min-height: 80vh;
+  margin-top: 4rem;
+  padding-top: 2rem;
+
+  label:nth-of-type(1) {
+    margin-top: 5rem;
+  }
+
+  input,
+  label,
+  textarea {
+    display: block;
+  }
+
+  label {
+    font-weight: 700;
+    color: $black-color;
+  }
+
+  label,
+  textarea {
+    margin-bottom: 1rem;
+  }
+
+  input {
+    margin-bottom: 3rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 1px solid $blue-color;
+
+    &:focus {
+      outline: 2px solid $black-color;
+    }
+  }
+
+  textarea {
+    padding: 1.9rem;
+    border: 1px solid $blue-color;
+    border-radius: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3rem;
+
+    &:focus {
+      outline: 2px solid $black-color;
+    }
+
+    button {
+      max-width: 100%;
+    }
+  }
+
+  form {
+    @include flex(center, center, column);
+    box-shadow: 0px 10px 10px rgba($color: #000000, $alpha: 0.5),
+      0px 10px 20px rgba($color: #000000, $alpha: 0.2);
+    border-radius: 2rem;
+    padding: 2rem 0;
+    background: $white-color;
+  }
+}
+
+// Footer
+footer {
+  background: $background-color;
+  text-align: center;
+  min-height: 10vh;
+  @include flex(flex-start, center, row);
+
+  h4 {
+    flex-basis: 20rem;
+  }
+
+  ul {
+    @include flex(space-around, center, row);
+    flex-basis: 20rem;
+  }
+
+  img {
+    transition: scale, 0.5s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

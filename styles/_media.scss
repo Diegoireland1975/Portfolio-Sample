@@ -1,0 +1,101 @@
+@media (min-width: 768px) {
+  // intro page
+  .btn {
+    font-size: $text;
+  }
+
+  .main-head {
+    width: 100%;
+    margin-right: auto;
+  }
+
+  nav {
+    @include flex(flex-start, center, row);
+    padding: 0 2rem;
+
+    #logo {
+      width: 2rem;
+    }
+
+    .logo {
+      @include flex(flex-start, center, row);
+    }
+
+    h1 {
+      font-size: 1.3rem;
+    }
+
+    ul {
+      flex-basis: 30rem;
+    }
+
+    a {
+      font-size: 1.2rem;
+    }
+  }
+
+  .intro {
+    @include flex(space-between, center, row);
+
+    h2 {
+      font-size: 5rem;
+    }
+
+    h3 {
+      font-size: 3rem;
+    }
+  }
+
+  .intro-text {
+    margin-right: auto;
+  }
+
+  .social-img {
+    width: 100%;
+  }
+
+  .intro-svg {
+    z-index: 100;
+    max-width: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .splash {
+    max-height: 100%;
+    position: absolute;
+    top: 0rem;
+    right: -30rem;
+    z-index: -1;
+  }
+
+  // Projects
+  .projects {
+    @include flex(space-between, center, row);
+    margin-top: 3rem;
+  }
+
+  // Contact
+  form {
+    margin: 0 auto;
+    max-width: 600px;
+
+    label {
+      font-size: 1.2rem;
+    }
+  }
+
+  // Footer
+  footer {
+    @include flex(space-around, center, row);
+
+    h4 {
+      font-size: 1.3rem;
+    }
+
+    img {
+      width: 2rem;
+    }
+  }
+}

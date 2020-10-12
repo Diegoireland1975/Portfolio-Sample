@@ -1,0 +1,33 @@
+$header1: 2.5rem;
+$header2: 2rem;
+$header3: 1.5rem;
+$header4: 1rem;
+$text: 1.5rem;
+$gradient: linear-gradient(left, #38d39f, #38a4d3);
+$gradient1: linear-gradient(right, #38d39f, #38a4d3);
+$background-color: #154353;
+$gray-text: #2c2c2c;
+$blue-color: rgb(26, 20, 107);
+$white-color: #fff;
+$black-color: #000;
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+// utilities
+.active {
+  background: $gray-text;
+  padding: 0.5rem 1.3rem;
+  border-radius: 0.5rem;
+  color: $white-color;
+}
+
+@import "basic";
+@import "intro";
+@import "projects";
+@import "contact";
+@import "media";

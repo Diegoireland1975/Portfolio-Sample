@@ -1,0 +1,37 @@
+.projects {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 90vh;
+  @include flex(center, center, column);
+  padding-top: 3.5rem;
+
+  img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+}
+
+.projects h2 {
+  margin: 2rem 0;
+  padding-top: 2rem;
+}
+
+.travelly,
+.elena {
+  padding: 1rem;
+}
+
+.projects {
+  @include flex(space-between, center, column);
+  text-align: center;
+
+  img {
+    transition: brightness, translate, 0.4s ease-in-out;
+    &:hover {
+      filter: brightness(75%);
+      transform: translate(0.5rem, -0.5rem);
+    }
+  }
+}
